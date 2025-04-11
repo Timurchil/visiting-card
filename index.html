@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Тимур Чил — Веб-разработчик</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Timur Chil — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Волна-фон -->
-    <div class="wave-header">
-        <h1>Привет, я Тимур 👋</h1>
-        <p>Я создаю простые и стильные сайты</p>
-        <svg class="wave-svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,149.3C480,139,600,117,720,122.7C840,128,960,160,1080,154.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
+  <button id="theme-toggle">Toggle Theme</button>
+
+  <div class="container">
+    <h1>Hello, I'm Timur 👋</h1>
+    <p class="about">
+      I'm a junior web developer. I create simple, modern and responsive websites with clean HTML & CSS.
+    </p>
+
+    <h2>What I Can Do:</h2>
+    <ul>
+      <li>HTML & CSS Layouts</li>
+      <li>Responsive Design</li>
+      <li>Fast and lightweight websites</li>
+    </ul>
+
+    <h2>Contact Me:</h2>
+    <div class="buttons">
+      <a href="https://t.me/your_telegram" target="_blank">Telegram</a>
+      <a href="mailto:your@email.com" target="_blank">Email</a>
+      <a href="https://fiverr.com/your_fiverr" target="_blank">Fiverr</a>
     </div>
+  </div>
 
-    <!-- Визитка -->
-    <div class="container">
-        <p class="about">Я начинающий веб-разработчик. Создаю адаптивные сайты, с красивым дизайном и аккуратной версткой.</p>
-
-        <h2>Что я умею:</h2>
-        <ul>
-            <li>HTML и CSS-верстка</li>
-            <li>Адаптивный дизайн</li>
-            <li>Быстрые, лёгкие сайты</li>
-        </ul>
-
-        <h2>Связь со мной:</h2>
-        <div class="buttons">
-            <a href="https://t.me/твоя_ссылка" target="_blank">Telegram</a>
-            <a href="mailto:your@email.com" target="_blank">Почта</a>
-            <a href="https://fiverr.com/твоя_ссылка" target="_blank">Fiverr</a>
-        </div>
-    </div>
+  <script>
+    const toggleButton = document.getElementById("theme-toggle");
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
 </body>
 </html>
+
 
