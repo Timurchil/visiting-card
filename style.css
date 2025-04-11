@@ -99,3 +99,56 @@ ul li::before {
     animation: fadeInUp 1s ease forwards;
     opacity: 0; 
 }
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.6;
+    animation: wave 8s linear infinite;
+}
+
+.wave1 {
+    background-image: radial-gradient(circle at 50% 50%, #42a5f5 25%, transparent 26%);
+    background-size: 50px 50px;
+    animation-delay: 0s;
+    z-index: 3;
+}
+
+.wave2 {
+    background-image: radial-gradient(circle at 50% 50%, #1976d2 25%, transparent 26%);
+    background-size: 60px 60px;
+    animation-delay: 2s;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.wave3 {
+    background-image: radial-gradient(circle at 50% 50%, #0d47a1 25%, transparent 26%);
+    background-size: 80px 80px;
+    animation-delay: 4s;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
